@@ -4,6 +4,9 @@
     <title><![CDATA[Hello World!]]></title>
     <url>%2F2018%2F08%2F19%2Fpace2car%2F</url>
     <content type="text"><![CDATA[首先是一个俗套的打招呼方式，hello world！我开始写博客啦！ 这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。 在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示和建议。 作者的技术水平十分有限，希望有问题或建议都能够多与作者联系，共同成长！ e-mail: pace2car@163.comauthor: Pace2Car 转载请…算了，反正也不可能有人转载。]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
       <tags>
         <tag>起步</tag>
         <tag>HelloWorld!</tag>
