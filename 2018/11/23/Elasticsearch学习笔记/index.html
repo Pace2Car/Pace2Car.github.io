@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。 近实时（NRT）Elasticsearch是一个近实时搜索平台。这意味着从索引文档到可搜索文档的时间有一点延迟（通常是一秒）。 集群集群是一个或多个节">
+<meta name="description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
 <meta name="keywords" content="es,elasticsearch,kibana">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Elasticsearch学习笔记">
 <meta property="og:url" content="https://pace2car.com/2018/11/23/Elasticsearch学习笔记/index.html">
 <meta property="og:site_name" content="Pace2Car&#39;s Blog">
-<meta property="og:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。 近实时（NRT）Elasticsearch是一个近实时搜索平台。这意味着从索引文档到可搜索文档的时间有一点延迟（通常是一秒）。 集群集群是一个或多个节">
+<meta property="og:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-23T05:05:36.931Z">
+<meta property="og:updated_time" content="2018-11-23T05:40:16.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elasticsearch学习笔记">
-<meta name="twitter:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。 近实时（NRT）Elasticsearch是一个近实时搜索平台。这意味着从索引文档到可搜索文档的时间有一点延迟（通常是一秒）。 集群集群是一个或多个节">
+<meta name="twitter:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
 
 
 
@@ -367,7 +367,7 @@
       
 
       
-        <h1 id="ElasticSearch学习笔记"><a href="#ElasticSearch学习笔记" class="headerlink" title="ElasticSearch学习笔记"></a>ElasticSearch学习笔记</h1><h2 id="基本概念（搬运官方文档）"><a href="#基本概念（搬运官方文档）" class="headerlink" title="基本概念（搬运官方文档）"></a>基本概念（搬运官方文档）</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。</p>
+        <h1 id="ElasticSearch学习笔记"><a href="#ElasticSearch学习笔记" class="headerlink" title="ElasticSearch学习笔记"></a>ElasticSearch学习笔记</h1><h2 id="基本概念（搬运官方文档）"><a href="#基本概念（搬运官方文档）" class="headerlink" title="基本概念（搬运官方文档）"></a>基本概念（搬运官方文档）</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。<br><a id="more"></a></p>
 <h3 id="近实时（NRT）"><a href="#近实时（NRT）" class="headerlink" title="近实时（NRT）"></a>近实时（NRT）</h3><p>Elasticsearch是一个近实时搜索平台。这意味着从索引文档到可搜索文档的时间有一点延迟（通常是一秒）。</p>
 <h3 id="集群"><a href="#集群" class="headerlink" title="集群"></a>集群</h3><p>集群是一个或多个节点（服务器）的集合，它们共同保存您的整个数据，并提供跨所有节点的联合索引和搜索功能。群集由唯一名称标识，默认情况下为“elasticsearch”。此名称很重要，因为如果节点设置为按名称加入群集，则该节点只能是群集的一部分。</p>
 <p>确保不要在不同的环境中重用相同的群集名称，否则最终会导致节点加入错误的群集。例如，您可以使用logging-dev，logging-stage以及logging-prod 用于开发，登台和生产集群。</p>
@@ -662,7 +662,7 @@
 
 <div class="powered-by">
 <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
+  本站访客数:<span id="busuanzi_value_site_pv"></span>
 </span>
 </div>
 
