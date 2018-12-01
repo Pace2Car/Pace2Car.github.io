@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Pace2Car&#39;s Blog">
 <meta property="og:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）慢慢更新个人总结吧…入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-27T08:04:32.244Z">
+<meta property="og:updated_time" content="2018-12-01T02:41:40.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elasticsearch学习笔记">
 <meta name="twitter:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）慢慢更新个人总结吧…入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
@@ -418,7 +418,7 @@
 <p><a href="https://www.jianshu.com/p/975326e65f65" target="_blank" rel="noopener">参考这个</a></p>
 <h3 id="启动权限"><a href="#启动权限" class="headerlink" title="启动权限"></a>启动权限</h3><p>这个是真的坑，首先es默认不允许root启动，而其中bin文件夹又是admin.root所属。。。</p>
 <p>解决：<br>先创建一个新用户，将ElasticSearch的安装目录及其子目录改为另外一个非root账户，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R esuser elasticsearch-6.5.0</span><br><span class="line">sudo chgrp -R esgroup elasticsearch-6.5.0</span><br></pre></td></tr></table></figure></p>
-<h3 id="启动es"><a href="#启动es" class="headerlink" title="启动es"></a>启动es</h3><p>root启动/elasticsearch-6.5.0/bin/elasticsearch,显示started启动成功。</p>
+<h3 id="启动es"><a href="#启动es" class="headerlink" title="启动es"></a>启动es</h3><p>esuser启动/elasticsearch-6.5.0/bin/elasticsearch,显示started启动成功。</p>
 <h3 id="远程访问"><a href="#远程访问" class="headerlink" title="远程访问"></a>远程访问</h3><p>修改elasticsearch.yml，绑定服务器IP地址。</p>
 <p>然后启动es，会发现三个报错，分别是最大文件创建数不够，esuser能够创建的线程数不够，虚拟内存不够<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.解决第一个错误</span><br><span class="line">修改etc/security/下的limits.conf,在文件最后加入</span><br><span class="line">esuser soft nofile 65536</span><br><span class="line">esuser hard nofile 65536</span><br><span class="line">esuser soft nproc 4096</span><br><span class="line">esuser hard nproc 4096</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2.解决第二个错误</span><br><span class="line">修改etc/security/limits.d/下的20-开头的文件</span><br><span class="line">将*改为用户名</span><br></pre></td></tr></table></figure>
