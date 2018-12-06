@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Pace2Car&#39;s Blog">
 <meta property="og:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）慢慢更新个人总结吧…入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-06T02:07:33.412Z">
+<meta property="og:updated_time" content="2018-12-06T03:34:18.914Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elasticsearch学习笔记">
 <meta name="twitter:description" content="ElasticSearch学习笔记基本概念（搬运官方文档）慢慢更新个人总结吧…入门Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。">
@@ -472,6 +472,8 @@
 <p>ps：dao层需要继承ElasticsearchRepository,方法名安规范写，框架自动生成查询语句</p>
 <p>还有一些注解上的使用，如@Document,@Id,@Field等，具体参考spring-data的官方文档即可</p>
 <p>整合完毕收工。</p>
+<hr>
+<p>补充：随着es越来越强大，我们甚至可以让它在项目中直接作为持久化存储库（类似于NoSQL），当然，目前大多数的企业开发还是让它作为一个前置搜索引擎来使用，即定时将数据库中的内容同步到es中，在用户进行索引操作时，直接的去从es库中查询，这样也能充分的利用到es近实时的特性（1秒之内）。在更大型的企业中，会利用es来做大数据日志分析的工作，主要技术栈为ELK，大致架构为syslog/logstash/flume -&gt;kafka -&gt;Spark/Track/Storm -&gt;HDFS -&gt;elasticsearch -&gt;kibana</p>
 
       
     </div>
