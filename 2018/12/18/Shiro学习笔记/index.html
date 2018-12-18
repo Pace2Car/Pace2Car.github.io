@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Java, Pace2Car" />
+  <meta name="keywords" content="shiro,权限管理,apache," />
 
 
 
@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="种一棵树最好的时间是十年前">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pace2Car&#39;s Blog">
-<meta property="og:url" content="https://pace2car.com/index.html">
+<meta name="description" content="Shiro学习笔记本文由此文的学习总结，完整学习参考此文 基本概念一般涉及到用户参与的系统，都会涉及权限管理，权限管理属于系统安全的问题，实现对用户访问的控制，限制用户的访问。 权限管理主要包括两个部分：身份验证和授权 入门一句话：Apache Shiro 是Java语言开发的一个安全框架。学习Shiro首要了解他的核心结构 SecurityManager为核心认证/权限管理  在java中初步使">
+<meta name="keywords" content="shiro,权限管理,apache">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shiro学习笔记">
+<meta property="og:url" content="https://pace2car.com/2018/12/18/Shiro学习笔记/index.html">
 <meta property="og:site_name" content="Pace2Car&#39;s Blog">
-<meta property="og:description" content="种一棵树最好的时间是十年前">
+<meta property="og:description" content="Shiro学习笔记本文由此文的学习总结，完整学习参考此文 基本概念一般涉及到用户参与的系统，都会涉及权限管理，权限管理属于系统安全的问题，实现对用户访问的控制，限制用户的访问。 权限管理主要包括两个部分：身份验证和授权 入门一句话：Apache Shiro 是Java语言开发的一个安全框架。学习Shiro首要了解他的核心结构 SecurityManager为核心认证/权限管理  在java中初步使">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img-blog.csdn.net/20160423180323442">
+<meta property="og:updated_time" content="2018-12-18T08:54:44.805Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pace2Car&#39;s Blog">
-<meta name="twitter:description" content="种一棵树最好的时间是十年前">
+<meta name="twitter:title" content="Shiro学习笔记">
+<meta name="twitter:description" content="Shiro学习笔记本文由此文的学习总结，完整学习参考此文 基本概念一般涉及到用户参与的系统，都会涉及权限管理，权限管理属于系统安全的问题，实现对用户访问的控制，限制用户的访问。 权限管理主要包括两个部分：身份验证和授权 入门一句话：Apache Shiro 是Java语言开发的一个安全框架。学习Shiro首要了解他的核心结构 SecurityManager为核心认证/权限管理  在java中初步使">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20160423180323442">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://pace2car.com/"/>
+  <link rel="canonical" href="https://pace2car.com/2018/12/18/Shiro学习笔记/"/>
 
 
 
 
 
-  <title>Pace2Car's Blog</title>
+  <title>Shiro学习笔记 | Pace2Car's Blog</title>
   
 
 
@@ -143,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,9 +274,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -303,9 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/18/Shiro学习笔记/" itemprop="url">Shiro学习笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">Shiro学习笔记</h1>
         
 
         <div class="post-meta">
@@ -388,9 +389,7 @@
       
 
       
-        
-          
-            <h1 id="Shiro学习笔记"><a href="#Shiro学习笔记" class="headerlink" title="Shiro学习笔记"></a>Shiro学习笔记</h1><p><a href="https://www.sojson.com/shiro#so730728009" target="_blank" rel="noopener">本文由此文的学习总结，完整学习参考此文</a></p>
+        <h1 id="Shiro学习笔记"><a href="#Shiro学习笔记" class="headerlink" title="Shiro学习笔记"></a>Shiro学习笔记</h1><p><a href="https://www.sojson.com/shiro#so730728009" target="_blank" rel="noopener">本文由此文的学习总结，完整学习参考此文</a></p>
 <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>一般涉及到用户参与的系统，都会涉及权限管理，权限管理属于系统安全的问题，实现对用户访问的控制，限制用户的访问。</p>
 <p>权限管理主要包括两个部分：<strong>身份验证</strong>和<strong>授权</strong></p>
 <h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>一句话：Apache Shiro 是Java语言开发的一个安全框架。<br>学习Shiro首要了解他的核心结构</p>
@@ -424,8 +423,6 @@
 <h2 id="Spring整合Shiro"><a href="#Spring整合Shiro" class="headerlink" title="Spring整合Shiro"></a>Spring整合Shiro</h2><p>参考项目：</p>
 <p><a href="https://github.com/baichengzhou/SpringMVC-Mybatis-Shiro-redis-0.2" target="_blank" rel="noopener">Spring整合Shiro案例</a></p>
 
-          
-        
       
     </div>
     
@@ -440,329 +437,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pace2car.com/2018/11/23/Elasticsearch学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pace2Car">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Pace2Car's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/23/Elasticsearch学习笔记/" itemprop="url">Elasticsearch学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon"> 
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-23T13:03:35+08:00">
-                2018-11-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/shiro/" rel="tag"><i class="fa fa-tag"></i> shiro</a>
           
-
+            <a href="/tags/权限管理/" rel="tag"><i class="fa fa-tag"></i> 权限管理</a>
           
-            
+            <a href="/tags/apache/" rel="tag"><i class="fa fa-tag"></i> apache</a>
           
-
-          
-          
-             <span id="/2018/11/23/Elasticsearch学习笔记/" class="leancloud_visitors" data-flag-title="Elasticsearch学习笔记">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h1 id="ElasticSearch学习笔记"><a href="#ElasticSearch学习笔记" class="headerlink" title="ElasticSearch学习笔记"></a>ElasticSearch学习笔记</h1><h2 id="基本概念（搬运官方文档）慢慢更新个人总结吧…"><a href="#基本概念（搬运官方文档）慢慢更新个人总结吧…" class="headerlink" title="基本概念（搬运官方文档）慢慢更新个人总结吧…"></a>基本概念（搬运官方文档）慢慢更新个人总结吧…</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>Elasticsearch是一个高度可扩展的开源全文搜索和分析引擎。它允许您快速，近实时地存储，搜索和分析大量数据。它通常用作底层引擎/技术，为具有复杂搜索功能和要求的应用程序提供支持。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/23/Elasticsearch学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/23/Elasticsearch学习笔记/" rel="next" title="Elasticsearch学习笔记">
+                <i class="fa fa-chevron-left"></i> Elasticsearch学习笔记
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pace2car.com/2018/08/19/pace2car/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Pace2Car">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Pace2Car's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/19/pace2car/" itemprop="url">Hello World!</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon"> 
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T13:39:31+08:00">
-                2018-08-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂记/" itemprop="url" rel="index">
-                    <span itemprop="name">杂记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/08/19/pace2car/" class="leancloud_visitors" data-flag-title="Hello World!">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>首先是一个俗套的打招呼方式，hello world！我开始写博客啦！</p>
-<p>这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。</p>
-<p>在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示和建议。</p>
-<p>作者的技术水平十分有限，希望有问题或建议都能够多与作者联系，共同成长！</p>
-<p>e-mail: <a href="mailto:pace2car@163.com" target="_blank" rel="noopener">pace2car@163.com</a><br>author: Pace2Car</p>
-<p>转载请…算了，反正也不可能有人转载。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -772,17 +480,68 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTAyOC8xNTU1NQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -803,8 +562,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -868,6 +636,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Shiro学习笔记"><span class="nav-number">1.</span> <span class="nav-text">Shiro学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#入门"><span class="nav-number">1.1.1.</span> <span class="nav-text">入门</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java中初步使用Shiro"><span class="nav-number">1.2.</span> <span class="nav-text">在java中初步使用Shiro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义Realm"><span class="nav-number">1.3.</span> <span class="nav-text">自定义Realm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MD5密码加密"><span class="nav-number">1.3.1.</span> <span class="nav-text">MD5密码加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权限管理"><span class="nav-number">1.3.2.</span> <span class="nav-text">权限管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Realm检查权限"><span class="nav-number">1.3.3.</span> <span class="nav-text">自定义Realm检查权限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring整合Shiro"><span class="nav-number">1.4.</span> <span class="nav-text">Spring整合Shiro</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1034,6 +818,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1062,6 +850,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
