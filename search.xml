@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[0.SpringCloud起步]]></title>
     <url>%2F2018%2F12%2F29%2F0-SpringCloud%E8%B5%B7%E6%AD%A5%2F</url>
-    <content type="text"><![CDATA[SpringCloud起步微服务架构集大成者，云计算最佳业务实践。 Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线）。分布式系统的协调导致了样板模式, 使用Spring Cloud开发人员可以快速地支持实现这些模式的服务和应用程序。他们将在任何分布式环境中运行良好，包括开发人员自己的笔记本电脑，裸机数据中心，以及Cloud Foundry等托管平台。 主要技术栈 程序流程 主要学习资料史上最简单的SpringCloud教程]]></content>
+    <content type="text"><![CDATA[SpringCloud起步什么是SpringCloud微服务架构集大成者，云计算最佳业务实践。 Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线）。分布式系统的协调导致了样板模式, 使用Spring Cloud开发人员可以快速地支持实现这些模式的服务和应用程序。他们将在任何分布式环境中运行良好，包括开发人员自己的笔记本电脑，裸机数据中心，以及Cloud Foundry等托管平台。 主要技术栈 程序流程 主要学习资料史上最简单的SpringCloud教程]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
