@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="起步,HelloWorld!," />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="首先是一个俗套的打招呼方式，hello world！我开始写博客啦！ 这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。 在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示">
-<meta name="keywords" content="起步,HelloWorld!">
+<meta name="description" content="前言最近看了同事用lambda和stream写的代码，看起来着实优雅，读起来又有点费劲，便找资料学习了JAVA8的新特性，写此笔记，记录感悟。 新特性概览 速度更快 代码更少（增加了新的语法 Lambda 表达式） 强大的 Stream API 便于并行 最大化减少空指针异常 Optiona  Lambda 表达式Lambda 表达式在Java 语言中引入了一个新的语法元素和操作符。这个操作符为">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World!">
-<meta property="og:url" content="https://pace2car.com/2018/08/19/pace2car/index.html">
+<meta property="og:title" content="JAVA8新特性">
+<meta property="og:url" content="https://pace2car.com/2019/10/23/JAVA8新特性/index.html">
 <meta property="og:site_name" content="Pace2Car&#39;s Blog">
-<meta property="og:description" content="首先是一个俗套的打招呼方式，hello world！我开始写博客啦！ 这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。 在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示">
+<meta property="og:description" content="前言最近看了同事用lambda和stream写的代码，看起来着实优雅，读起来又有点费劲，便找资料学习了JAVA8的新特性，写此笔记，记录感悟。 新特性概览 速度更快 代码更少（增加了新的语法 Lambda 表达式） 强大的 Stream API 便于并行 最大化减少空指针异常 Optiona  Lambda 表达式Lambda 表达式在Java 语言中引入了一个新的语法元素和操作符。这个操作符为">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-07T03:37:02.278Z">
+<meta property="og:updated_time" content="2019-10-23T03:32:48.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World!">
-<meta name="twitter:description" content="首先是一个俗套的打招呼方式，hello world！我开始写博客啦！ 这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。 在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示">
+<meta name="twitter:title" content="JAVA8新特性">
+<meta name="twitter:description" content="前言最近看了同事用lambda和stream写的代码，看起来着实优雅，读起来又有点费劲，便找资料学习了JAVA8的新特性，写此笔记，记录感悟。 新特性概览 速度更快 代码更少（增加了新的语法 Lambda 表达式） 强大的 Stream API 便于并行 最大化减少空指针异常 Optiona  Lambda 表达式Lambda 表达式在Java 语言中引入了一个新的语法元素和操作符。这个操作符为">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://pace2car.com/2018/08/19/pace2car/"/>
+  <link rel="canonical" href="https://pace2car.com/2019/10/23/JAVA8新特性/"/>
 
 
 
 
 
-  <title>Hello World! | Pace2Car's Blog</title>
+  <title>JAVA8新特性 | Pace2Car's Blog</title>
   
 
 
@@ -287,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pace2car.com/2018/08/19/pace2car/">
+    <link itemprop="mainEntityOfPage" href="https://pace2car.com/2019/10/23/JAVA8新特性/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Pace2Car">
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World!</h1>
+          <h1 class="post-title" itemprop="name headline">JAVA8新特性</h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T13:39:31+08:00">
-                2018-08-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-23T11:27:30+08:00">
+                2019-10-23
               </time>
             
 
@@ -339,8 +339,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂记/" itemprop="url" rel="index">
-                    <span itemprop="name">杂记</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -356,7 +356,7 @@
 
           
           
-             <span id="/2018/08/19/pace2car/" class="leancloud_visitors" data-flag-title="Hello World!">
+             <span id="/2019/10/23/JAVA8新特性/" class="leancloud_visitors" data-flag-title="JAVA8新特性">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -387,12 +387,104 @@
       
 
       
-        <p>首先是一个俗套的打招呼方式，hello world！我开始写博客啦！</p>
-<p>这是我的第一篇个人博客，本着交流技术和提高自己的心态，想通过此博客与大家分享学习和成长路程中的心得和曾经踩过的坑，以及程序上小问题。</p>
-<p>在两天时间的不懈努力下，跨越各种艰难险阻，各种小坑，终于成功搭建起了自己的博客，一路上感谢各位前人大牛提供的博客援助，这也更加坚定了我写博客的决心和目的——分享经验，给后来人留下一点微不足道的提示和建议。</p>
-<p>作者的技术水平十分有限，希望有问题或建议都能够多与作者联系，共同成长！</p>
-<p>e-mail: <a href="mailto:pace2car@163.com" target="_blank" rel="noopener">pace2car@163.com</a><br>author: Pace2Car</p>
-<p>转载请…算了，反正也不可能有人转载。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近看了同事用lambda和stream写的代码，看起来着实优雅，读起来又有点费劲，便找资料学习了JAVA8的新特性，写此笔记，记录感悟。</p>
+<h1 id="新特性概览"><a href="#新特性概览" class="headerlink" title="新特性概览"></a>新特性概览</h1><ul>
+<li>速度更快</li>
+<li>代码更少（增加了新的语法 Lambda 表达式）</li>
+<li>强大的 Stream API</li>
+<li>便于并行</li>
+<li>最大化减少空指针异常 Optiona</li>
+</ul>
+<h1 id="Lambda-表达式"><a href="#Lambda-表达式" class="headerlink" title="Lambda 表达式"></a>Lambda 表达式</h1><p>Lambda 表达式在Java 语言中引入了一个新的语法元<br>素和操作符。这个操作符为 ==-&gt;== ， 该操作符被称<br>为 Lambda 操作符或剪头操作符。它将 Lambda 分为<br>两个部分：</p>
+<p><strong>左侧：</strong> 指定了 Lambda 表达式需要的所有参数</p>
+<p><strong>右侧：</strong> 指定了 Lambda 体，即 Lambda 表达式要执行<br>的功能。</p>
+<p><strong>示例1：</strong> 无参无返回值<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 匿名内部类实现</span></span><br><span class="line">Runnable r1 = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"anno"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// lambda表达式</span></span><br><span class="line">Runnable r2 = () -&gt; System.out.println(<span class="string">"lambda"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>代码简洁度极大提升</p>
+<p><strong>示例2：</strong> 一个参数无返回值<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Consumer&lt;String&gt; c1 = <span class="keyword">new</span> Consumer&lt;String&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">accept</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">常规：Consumer&lt;String&gt; c2 = (s) -&gt; System.out.println(s);</span><br><span class="line">单参数可省略小括号：Consumer&lt;String&gt; c2 = s -&gt; System.out.println(s);</span><br></pre></td></tr></table></figure></p>
+<p><strong>示例3：</strong> 有返回值<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">BinaryOperator&lt;Long&gt; b1 = <span class="keyword">new</span> BinaryOperator&lt;Long&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Long <span class="title">apply</span><span class="params">(Long x, Long y)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello"</span>);</span><br><span class="line">        <span class="keyword">return</span> x + y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">BinaryOperator&lt;Long&gt; b2 = (x, y) -&gt; &#123;</span><br><span class="line">    System.out.println(<span class="string">"hello"</span>);</span><br><span class="line">    <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><strong>示例4：</strong> 当lambda体只有一句时，return和｛｝都可省略<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">BinaryOperator&lt;Long&gt; b1 = <span class="keyword">new</span> BinaryOperator&lt;Long&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Long <span class="title">apply</span><span class="params">(Long x, Long y)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello"</span>);</span><br><span class="line">        <span class="keyword">return</span> x + y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">BinaryOperator&lt;Long&gt; b2 = (x, y) -&gt; x + y;</span><br><span class="line">等价于</span><br><span class="line">BinaryOperator&lt;Long&gt; b2 = (Long x, Long y) -&gt; x + y;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>lambda表达式中的参数类型可以通过 ==编译器类型推断== 得出，所以可以省略不写。</p>
+</blockquote>
+<h1 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h1><ul>
+<li>只包含一个抽象方法的接口，称为函数式接口。</li>
+<li>你可以通过 Lambda 表达式来创建该接口的对象。（若 Lambda<br>表达式抛出一个受检异常，那么该异常需要在目标接口的抽象方法上进行声明）。</li>
+<li>我们可以在任意函数式接口上使用 ==@FunctionalInterface== 注解，<br>这样做可以检查它是否是一个函数式接口，同时 javadoc 也会包<br>含一条声明，说明这个接口是一个函数式接口。</li>
+</ul>
+<h1 id="方法引用"><a href="#方法引用" class="headerlink" title="方法引用"></a>方法引用</h1><p>当要传递给Lambda体的操作，已经有实现的方法了，可以使用方法引用！<br>（实现抽象方法的参数列表，必须与方法引用方法的参数列表保持一致！ ）</p>
+<p><strong>方法引用：</strong> 使用操作符 ==::== 将方法名和对象或类的名字分隔开来。<br>如下三种主要使用情况：</p>
+<ul>
+<li>对象::实例方法</li>
+<li>类::静态方法</li>
+<li>类::实例方法</li>
+</ul>
+<p>例如：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">System.out::println </span><br><span class="line">等价于</span><br><span class="line">(x) -&gt; System.out.println(x);</span><br><span class="line"></span><br><span class="line">s -&gt; <span class="string">"ss"</span>.equals(s)</span><br><span class="line">可写为</span><br><span class="line"><span class="string">"ss"</span>::equals</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>代码简洁但可读性较低</p>
+</blockquote>
+<h1 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h1><p>Java8中有两大最为重要的改变。第一个是 Lambda 表达式；另外一<br>个则是 Stream API(java.util.stream.*)。</p>
+<p>Stream 是 Java8 中处理集合的关键抽象概念，它可以指定你希望对<br>集合进行的操作，可以执行非常复杂的查找、过滤和映射数据等操作。<br>使用Stream API 对集合数据进行操作，就类似于使用 SQL 执行的数<br>据库查询。也可以使用 Stream API 来并行执行操作。简而言之，<br>Stream API 提供了一种<strong>高效且易于使用</strong>的处理数据的方式。</p>
+<h2 id="Stream（流）是什么"><a href="#Stream（流）是什么" class="headerlink" title="Stream（流）是什么"></a>Stream（流）是什么</h2><p>是数据渠道，用于操作数据源（集合、数组等）所生成的元素序列。</p>
+<blockquote>
+<p>集合讲的是数据，流讲的是计算！ </p>
+</blockquote>
+<p><strong>注意：</strong></p>
+<ul>
+<li>Stream 自己不会存储元素。</li>
+<li>Stream 不会改变源对象。相反，他们会返回一个持有结果的新Stream。</li>
+<li>Stream 操作是延迟执行的。这意味着他们会等到需要结果的时候才执行。</li>
+</ul>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>Stream 的操作三个步骤：</p>
+<ol>
+<li><strong>创建 Stream</strong></li>
+</ol>
+<p>一个数据源（如： 集合、数组）， 获取一个流<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">集合：</span><br><span class="line">Java8 中的 Collection 接口被扩展，提供了</span><br><span class="line">两个获取流的方法：</span><br><span class="line">- default Stream&lt;E&gt; stream() :         返回一个顺序流</span><br><span class="line">- default Stream&lt;E&gt; parallelStream() : 返回一个并行流</span><br><span class="line"></span><br><span class="line">Java8 中的 Arrays 的静态方法 stream() 可以获取数组流：</span><br><span class="line">- static &lt;T&gt; Stream&lt;T&gt; stream(T[] array): 返回一个流</span><br><span class="line"></span><br><span class="line">重载形式，能够处理对应基本类型的数组：</span><br><span class="line">- public static IntStream stream(int[] array)</span><br><span class="line">- public static LongStream stream(long[] array)</span><br><span class="line">- public static DoubleStream stream(double[] array)</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li><strong>中间操作</strong></li>
+</ol>
+<p>一个中间操作链，对数据源的数据进行处理<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">中间层进行了具体的数据操作，</span><br><span class="line">常见有：</span><br><span class="line">filter(Predicate p)            接收lambda,筛选</span><br><span class="line">distinct()                     去重</span><br><span class="line">limit(<span class="keyword">long</span> size)               截断</span><br><span class="line">skip(<span class="keyword">long</span> number)              跳过（与截断互补）</span><br><span class="line">map(Function f)                接收函数，作用到每个元素并映射为新元素</span><br><span class="line">sorted()/sorted(Comparator c)  自然排序/按规则排序</span><br></pre></td></tr></table></figure></p>
+<ol start="3">
+<li><strong>终止操作(终端操作)</strong></li>
+</ol>
+<p>一个终止操作，执行中间操作链，并产生结果</p>
+<p>以常用的集合操作为例：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StreamDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        list.add(<span class="string">"s1"</span>);</span><br><span class="line">        list.add(<span class="string">"s2"</span>);</span><br><span class="line">        list.add(<span class="string">"s3"</span>);</span><br><span class="line">        list.add(<span class="string">"s4"</span>);</span><br><span class="line">        list.add(<span class="string">"s5"</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;String&gt; collect = list.stream().filter(s -&gt; <span class="string">"s1"</span>.equals(s)).collect(Collectors.toList());</span><br><span class="line">        collect.forEach(System.out::println);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">执行打印结果中就只有 <span class="string">"s1"</span> 了</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">终止操作最常用的是返回集合collect(Collector c)，并且Collectors提供了很多静态方法，可以满足不同需求</span><br><span class="line">另外还提供一些接口：</span><br><span class="line">---查找</span><br><span class="line">findFirst()              返回第一个元素</span><br><span class="line">findAny()                返回任意一个元素</span><br><span class="line">count()                  返回总数</span><br><span class="line">max(Comparator c)        按规则返回最大值</span><br><span class="line">min(Comparator c)        按规则返回最小值</span><br><span class="line">forEach(Consumer c)      内部迭代（集合的迭代叫外部迭代）</span><br><span class="line">---匹配</span><br><span class="line">allMatch(Predicate p)    全匹配</span><br><span class="line">anyMatch(Predicate p)    任意一个匹配</span><br><span class="line">noneMatch(Predicate p)   全不匹配</span><br><span class="line">---归约</span><br><span class="line">reduce(BinaryOpreator b)         反复结合得到一个值, 返回Optional&lt;T&gt;</span><br><span class="line">reduce(T iden, BinaryOpreator b) 反复结合得到一个值, 返回T</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>stream还有很多强大的功能，可以写个demo自行测试，api文档里也描述得非常全面。<br><a href="http://www.matools.com/api/java8" target="_blank" rel="noopener">java8中文文档</a></p>
+</blockquote>
+<h2 id="并行流与串行流"><a href="#并行流与串行流" class="headerlink" title="并行流与串行流"></a>并行流与串行流</h2><p>并行流就是把一个内容分成多个数据块，并用不同的线程分<br>别处理每个数据块的流。<br>Java 8 中将并行进行了优化，我们可以很容易的对数据进行并<br>行操作。 Stream API 可以声明性地通过 ==parallel()== 与<br>==sequential()== 在并行流与顺序流之间进行切换。</p>
+<h1 id="fork-join-（了解）"><a href="#fork-join-（了解）" class="headerlink" title="fork/join （了解）"></a>fork/join （了解）</h1><p><strong>Fork/Join 框架</strong>：<br>就是在必要的情况下，将一个大任务，进行拆分(fork)成若干个小任务（拆到不可再拆时），再将一个个的小任务运算的结果进行 join 汇总。</p>
+<h1 id="新的时间API"><a href="#新的时间API" class="headerlink" title="新的时间API"></a>新的时间API</h1><ul>
+<li>LocalDate</li>
+<li>LocalTime</li>
+<li>LocalDateTime</li>
+<li>Instant</li>
+<li>Duration</li>
+<li>Period</li>
+</ul>
+<p>解决了时间处理的难题</p>
+<blockquote>
+<p>简单概括为Date有的我都有，Date没的我也有</p>
+</blockquote>
+<h2 id="时间校正器"><a href="#时间校正器" class="headerlink" title="时间校正器"></a>时间校正器</h2><ul>
+<li>TemporalAdjuster：校正器，获取“下个周日”等操作</li>
+<li>TemporalAdjusters：通过静态方法提供大量常用校正实实现</li>
+</ul>
+<p>示例代码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LocalDateTimeDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        LocalDateTime now = LocalDateTime.now();</span><br><span class="line">        System.out.println(now.getDayOfWeek());</span><br><span class="line">        System.out.println(now.getDayOfYear());</span><br><span class="line">        LocalDateTime with = now.with(TemporalAdjusters.next(DayOfWeek.TUESDAY));</span><br><span class="line">        System.out.println(with.getDayOfWeek());</span><br><span class="line">        System.out.println(with.getDayOfYear());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="解析与格式化"><a href="#解析与格式化" class="headerlink" title="解析与格式化"></a>解析与格式化</h2><p>java.time.format.DateTimeFormatter 类：该类提供了三种<br>格式化方法：</p>
+<ul>
+<li>预定义的标准格式</li>
+<li>语言环境相关的格式</li>
+<li>自定义的格式</li>
+</ul>
+<h1 id="接口可以有默认实现和静态方法"><a href="#接口可以有默认实现和静态方法" class="headerlink" title="接口可以有默认实现和静态方法"></a>接口可以有默认实现和静态方法</h1><p>示例<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">DefaultAndStaticDemo</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 常规方法定义</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 默认方法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">default</span> String <span class="title">sayHi</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Hi default!"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 静态方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello static!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>接口方法有默认实现后，就带来了必不可少的方法冲突问题，主要为以下两大类：</p>
+<ul>
+<li><strong>继承的父类与实现的接口冲突</strong>：采用 ==类优先法则== ，即优先使用类中的方法实现，忽略接口的默认实现</li>
+<li><strong>接口冲突</strong>：如果一个父接口提供一个默认方法，而另一个接口也提供了一个具有相同名称和参数列表的方法（不管方法是否是默认方法），那么必须重写该方法来解决冲突</li>
+</ul>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>JAVA8中最主要的特点还是lambda表达式和stream API，功能强大且代码简洁，与JAVA一直以来被诟病代码格式刻板（个人觉得还是简单易读就好）有了一定的改善，总结来看只怪自己学习太晚，整天研究解决方案，连基本的语言基础都落下了。</p>
+<p>JAVA8后的首个长期支持版本JAVA11已经于去年发布，目前不少团队已经将JAVA11投入生产了，当然主流版本仍然是JAVA8（1.稳定；2.JAVA8确实够用了）。</p>
+<p>另外JAVA14也预计在2020年3月发布，作为JAVA程序员真的好方…</p>
 
       
     </div>
@@ -410,9 +502,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/起步/" rel="tag"><i class="fa fa-tag"></i> 起步</a>
-          
-            <a href="/tags/HelloWorld/" rel="tag"><i class="fa fa-tag"></i> HelloWorld!</a>
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
           
         </div>
       
@@ -425,15 +515,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/08/J.U.C学习笔记/" rel="next" title="J.U.C学习笔记">
+                <i class="fa fa-chevron-left"></i> J.U.C学习笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/23/Elasticsearch学习笔记/" rel="prev" title="Elasticsearch学习笔记">
-                Elasticsearch学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -531,8 +621,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -596,6 +695,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新特性概览"><span class="nav-number">2.</span> <span class="nav-text">新特性概览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lambda-表达式"><span class="nav-number">3.</span> <span class="nav-text">Lambda 表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数式接口"><span class="nav-number">4.</span> <span class="nav-text">函数式接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法引用"><span class="nav-number">5.</span> <span class="nav-text">方法引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Stream-API"><span class="nav-number">6.</span> <span class="nav-text">Stream API</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Stream（流）是什么"><span class="nav-number">6.1.</span> <span class="nav-text">Stream（流）是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用"><span class="nav-number">6.2.</span> <span class="nav-text">如何使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#并行流与串行流"><span class="nav-number">6.3.</span> <span class="nav-text">并行流与串行流</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#fork-join-（了解）"><span class="nav-number">7.</span> <span class="nav-text">fork/join （了解）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的时间API"><span class="nav-number">8.</span> <span class="nav-text">新的时间API</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#时间校正器"><span class="nav-number">8.1.</span> <span class="nav-text">时间校正器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析与格式化"><span class="nav-number">8.2.</span> <span class="nav-text">解析与格式化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#接口可以有默认实现和静态方法"><span class="nav-number">9.</span> <span class="nav-text">接口可以有默认实现和静态方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">10.</span> <span class="nav-text">后记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
